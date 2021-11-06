@@ -15,7 +15,7 @@ function changeLanguage() {
 function loadCode($language){
     $.ajax({
 
-        url: "/oide/app/default_code/loader.php",
+        url: "<?php echo site_url('/oide/app/default_code/loader.php');?>",
 
         method: "POST",
 
@@ -33,7 +33,7 @@ function executeCode() {
 
     $.ajax({
 
-        url: "/oide/app/compiler.php",
+        url: "<?php echo site_url('/oide/app/compiler.php');?>",
 
         method: "POST",
 
